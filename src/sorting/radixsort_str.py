@@ -20,7 +20,7 @@ def rad_sort_str(arr: list, key: Callable = itself, reverse: bool = False):
     # sort them into buckets of length
     # shortest->longest when not reverse
     # longest->shortest when reverse
-    m_sort_bu(arr, key=len, reverse=reverse)
+    m_sort_bum_sort_bu(arr, key=len, reverse=reverse)
     max_len = len(arr[-1]) if not reverse else len(arr[0])
 
     # LSD radix sort(right to left).
